@@ -25,9 +25,9 @@
         <th>Nazwa</th>
         <th>Cena</th>
     </tr>
-    <tr th:each="productList:${productList}">
-        <th th:text="${productList.getName()}"></th>
-        <th th:text="${productList.getPrice()}"></th>
+    <tr th:each="product:${productList}">
+        <th th:text="${product.getName()}"></th>
+        <th th:text="${product.getPrice()}"></th>
     </tr>
 </table>
 <text th:text="|Suma cen ${price}|"></text>
